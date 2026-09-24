@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ارزیاب — قیمت لحظه‌ای ارز دیجیتال</title>
-    <meta name="description" content="تسک 8 API دریافت و نمایش داده از" />
-
+    <title>ارزدیجیتال — قیمت لحظه‌ای ارز دیجیتال</title>
+    <meta name="description" content="task 8 of js file-API">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -13,12 +12,12 @@
       <div class="site-header-inner">
         <a href="#" class="brand">
           <span class="brand-mark">⟡</span>
-          <span class="brand-name">ارزیاب</span>
+          <span class="brand-name">ارزدیجیتال</span>
         </a>
         <nav class="site-nav">
           <a href="#coins-grid">بازار</a>
           <a href="#about">درباره</a>
-          <a href="https://www.coingecko.com" target="_blank" rel="noopener"
+          <a href="https://www.coingecko.com" target="_blank"
             >منبع داده</a
           >
         </nav>
@@ -27,11 +26,30 @@
 
     <div class="page">
       <section class="hero">
+        <span class="hero-badge">
+          <span class="pulse-dot"></span>
+          داده لحظه‌ای بازار
+        </span>
         <h1 class="hero-title">قیمت لحظه‌ای بازار ارز دیجیتال</h1>
         <p class="hero-subtitle">
           ارزهای مورد نظرت رو اضافه کن و قیمت و تغییرات ۲۴ ساعته‌شون رو دنبال
           کن.
         </p>
+      </section>
+
+      <section class="features-strip">
+        <div class="feature-item">
+          <span class="feature-icon">⚡</span>
+          <span>داده لحظه‌ای</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔓</span>
+          <span>بدون نیاز به ثبت‌نام</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🌐</span>
+          <span>مستقیم از CoinGecko</span>
+        </div>
       </section>
 
       <section class="controls">
@@ -53,19 +71,24 @@
       </section>
 
       <section id="coins-grid" class="coins-grid">
-        <!-- کارت‌های ارز دیجیتال با جاوااسکریپت اینجا ساخته و اضافه می‌شن -->
+        <div class="empty-state">
+          <span class="empty-icon">◈</span>
+          <p class="empty-title">هنوز ارزی اضافه نکردی</p>
+          <p class="empty-text">
+            از باکس بالا اسم یه ارز (مثل bitcoin) رو وارد کن
+          </p>
+        </div>
       </section>
     </div>
 
     <footer class="site-footer" id="about">
       <div class="footer-inner">
         <div class="footer-col">
-          <p class="footer-brand"><span class="brand-mark">⟡</span> ارزیاب</p>
+          <p class="footer-brand"><span class="brand-mark">⟡</span> ارزدیجیتال</p>
           <p class="footer-text">
-            در صفحه قیمت ارز دیجیتال، اطلاعات کاملی از قیمت امروز ارزهای
-            دیجیتال، تاریخچه نوسانات توکن‌های بازار و نوسانات لحظه‌ای را مشاهده
-            کنید. در حال حاضر لیست قیمت ارزدیجیتال، کامل‌ترین و به‌روزترین
-            اطلاعات و نمای بازار رمزارزها را نمایش می‌دهد.
+            ارزدیجیتال، مرجع قیمتی، اطلاعات ارزهای دیجیتال و پوشش‌دهنده اخبار و
+            آموزش‌های این حوزه بوده و بستری برای گفتگو درباره ارزهای محبوب
+            شماست.
           </p>
         </div>
 
@@ -98,7 +121,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 1405 ارزیاب</p>
+        <p>© ۱۴۰۵</p>
       </div>
     </footer>
 
