@@ -9,7 +9,7 @@ const coinsGrid = document.getElementById("coins-grid");
 const API_BASE = "https://api.coingecko.com/api/v3";
 const TOP_COUNT = 12; // تعداد ارزهایی که اول صفحه نشون داده می‌شه
 
-// نگاشت اسم فارسی به آیدی CoinGecko
+//  اسم فارسی به آیدی CoinGecko
 const FA_ALIASES = {
   "بیت کوین": "bitcoin",
   بیتکوین: "bitcoin",
@@ -258,3 +258,18 @@ coinsGrid.addEventListener("click", (e) => {
 
 // شروع: لیست برترین ارزها رو بگیر و نشون بده
 loadTopCoins();
+
+const themeBtn = document.getElementById("theme-toggle");
+
+function setTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  themeBtn.textContent = theme === "dark" ? "☀️ حالت روشن" : "🌙 حالت تاریک";
+  localStorage.setItem("theme", theme);
+}
+
+themeBtn.addEventListener("click", () => {
+  const isLight = document.documentElement.dataset.theme === "light";
+  setTheme(isLight ? "dark" : "light");
+});
+
+setTheme(localStorage.getItem("theme") || "dark");
