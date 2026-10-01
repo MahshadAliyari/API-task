@@ -55,6 +55,7 @@ A simple web app that shows live cryptocurrency prices and their 24-hour changes
 
 ## Live Demo
 
+https://mahshadaliyari.github.io/API-task/
 
 ---
 
